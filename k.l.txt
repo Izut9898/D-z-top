@@ -1,0 +1,115 @@
+Перечисленные ниже запросы найти на любых web ресурсах, скопировать функцией Copy as fetch, вставить в текстовый файл.
+Прислать этот файл в ответе на задание.
+
+GET- запрос информации о ресурсе.
+fetch("https://www.dns-shop.ru/", {
+  "headers": {
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-language": "ru,en;q=0.9,ru-RU;q=0.8,en-US;q=0.7",
+    "cache-control": "no-cache",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "cross-site",
+    "upgrade-insecure-requests": "1"
+  },
+  "referrer": "https://www.google.com/",
+  "referrerPolicy": "origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});
+POST
+- запрос на создание ресурса (например, регистрация пользователя).
+fetch("https://ank.dns-shop.ru/topics/collect", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "ru,en;q=0.9,ru-RU;q=0.8,en-US;q=0.7",
+    "cache-control": "no-cache",
+    "content-type": "application/vnd.kafka.json.v2+json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://www.dns-shop.ru/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{\"records\": [{\"value\": \"v=1&_v=j101&a=711242403&t=pageview&_s=1&dl=https%3A%2F%2Fwww.dns-shop.ru%2F&ul=ru&de=UTF-8&dt=DNS%20%E2%80%93%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82%20%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%20%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%B8%20%D0%B1%D1%8B%D1%82%D0%BE%D0%B2%D0%BE%D0%B9%20%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BF%D0%BE%20%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D1%8B%D0%BC%20%D1%86%D0%B5%D0%BD%D0%B0%D0%BC.&sd=24-bit&sr=1920x1080&vp=1903x415&je=0&_u=SCCAgEIpAAAAACAcI~&jid=1378426658&gjid=1196927829&cid=1664200804.1707564947&tid=UA-8349380-2&_gid=1569500470.1707564947&_slc=1&cd1=cheboksary&z=1051004025&userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36&referrer=https%3A%2F%2Fwww.dns-shop.ru%2F&ms_timestamp=1707567440180\"}]}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "omit"
+});
+PUT
+- запрос на обновление ресурса (обновляет ресурс полностью).
+PATCH
+- запрос на обновление ресурса (частично обновляет ресурс).
+DELETE
+- запрос на удаление ресурса.
+OPTIONS
+- запрос информации о поддерживаемых методах у ресурса (в заголовке
+Allow
+представляются поддерживаемые методы).
+HEAD
+- запрос заголовков ресурса (аналогичен методу GET, но без получения тела ответа).
+CONNECT
+- преобразование соединения в прозрачный TCP/IP-туннель, например, для соединения с
+
+
+fetch("https://restapi.dns-shop.ru/v1/cart-service/delete-products", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "ru,en;q=0.9,ru-RU;q=0.8,en-US;q=0.7",
+    "cache-control": "no-cache",
+    "cartid": "5c03128d-0c0b-329e-bea1-2fa519caa7d5",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://www.dns-shop.ru/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{\"ids\":[\"02d6f6dd-60a4-4ef1-bb6d-a5deb452c7db\"]}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "omit"
+});
+
+
+
+
+
+
+fetch("https://restapi.dns-shop.ru/v1/get-menu-header?shortMenu=1", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "ru,en;q=0.9,ru-RU;q=0.8,en-US;q=0.7",
+    "cache-control": "no-cache",
+    "cityid": "c5073534-0f65-11e0-ae93-001517c526f0",
+    "lang": "ru",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "siteid": "8c2e120b-8732-48a7-8178-0e04d47962d8"
+  },
+  "referrer": "https://www.dns-shop.ru/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+});

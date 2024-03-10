@@ -1,0 +1,192 @@
+PUT
+- запрос на обновление ресурса 
+ fetch("https://eavicum2.atlassian.net/rest/api/latest/project/WEB/tracking/recent", {
+  "headers": {
+    "accept": "application/json,text/javascript,*/*",
+    "accept-language": "ru,en;q=0.9,ru-RU;q=0.8,en-US;q=0.7",
+    "cache-control": "no-cache",
+    "content-type": "application/json",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "x-kl-kfa-ajax-request": "Ajax_Request"
+  },
+  "referrer": "https://eavicum2.atlassian.net/jira/software/c/projects/WEB/issues",
+  "referrerPolicy": "same-origin",
+  "body": null,
+  "method": "PUT",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+DELETE
+- запрос на удаление ресурса.
+fetch("https://app.tm4j.smartbear.com/backend/rest/tests/2.0/tracelink/75437402", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "ru,en;q=0.9,ru-RU;q=0.8,en-US;q=0.7",
+    "authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3MTIwMjA6ZTlkNmNmODYtYmMwMy00MTkxLWI0ZmItYTkwNDAzNzI2Mzk2IiwicXNoIjoiY29udGV4dC1xc2giLCJpc3MiOiI1YWM5MzliMy04NGVlLTNmMTMtYTNlMS04OWQ2OTZmZGVmNDEiLCJjb250ZXh0Ijp7ImxpY2Vuc2UiOnsiYWN0aXZlIjp0cnVlfSwiamlyYSI6eyJpc3N1ZSI6eyJpc3N1ZXR5cGUiOnsiaWQiOiIxMDAxNSJ9LCJrZXkiOiJCVUctNyIsImlkIjoiMTAwMzIifSwicHJvamVjdCI6eyJrZXkiOiJCVUciLCJpZCI6IjEwMDA0In19fSwiZXhwIjoxNzA3ODIwOTg1LCJpYXQiOjE3MDc4MjAwODV9.HBhuEckdNzHVuAi1UsYf7TS_J0YXYNWTz0x3fDB1jFU",
+    "cache-control": "no-cache",
+    "jira-project-id": "10004",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "x-kl-kfa-ajax-request": "Ajax_Request"
+  },
+  "referrer": "https://app.tm4j.smartbear.com/",
+  "referrerPolicy": "origin",
+  "body": null,
+  "method": "DELETE",
+  "mode": "cors",
+  "credentials": "include"
+});
+
+POST
+- запрос на создание ресурса
+fetch("https://gc.kis.v2.scr.kaspersky-labs.com/33CCD7B1-BE09-4559-81F3-63BB5FD76B2C/E6CB22C8-74E1-40BA-8424-9D323F3CE2E9/to/wsm.onHashChange?tm=2024-02-13T10%3A31%3A09.299Z", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "ru,en;q=0.9,ru-RU;q=0.8,en-US;q=0.7",
+    "cache-control": "no-cache",
+    "content-type": "text/plain;charset=UTF-8",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site"
+  },
+  "referrer": "https://journal.top-academy.ru/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": "{\"result\":0,\"method\":\"wsm.onHashChange\",\"parameters\":\"{\\\"newLocationUrl\\\":\\\"aHR0cHM6Ly9qb3VybmFsLnRvcC1hY2FkZW15LnJ1L3J1L21haW4vZGFzaGJvYXJkL3BhZ2UvaW5kZXg=\\\",\\\"urlEncrypted\\\":true}\"}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "omit"
+});
+
+GET
+- запрос информации о ресурсе.
+fetch("https://gc.kis.v2.scr.kaspersky-labs.com/7D8B79A2-8974-4D7B-A76A-F4F29624C06BC7h-P4twZX5Bob43Lhi_TmhQKNRZIRMYomHy6csydwzaFqAxiFN3PT__U-fOi_8dvtoY1z_CvoAzi3z0-ogTbg/init?data=eyJ1cmwiOiJodHRwczovL21jLnlhbmRleC5ydS9tZXRyaWthL21ldHJpa2FfbWF0Y2guaHRtbCIsInBsdWdpbnMiOiJ3c20md250JmNhJnZzJnVhJmNiJnhocl9jb250ZW50IiwiZGF0YSI6eyJkYXRhIjpbeyJwbHVnaW4iOiJ3c20iLCJwYXJhbWV0ZXJzIjoie1wicmVmZXJyZXJcIjpcImh0dHBzOi8vam91cm5hbC50b3AtYWNhZGVteS5ydS9cIixcInN0dWJJZFwiOlwiXCJ9In0seyJwbHVnaW4iOiJ3bnQiLCJwYXJhbWV0ZXJzIjoie1wicmVmZXJyZXJcIjpcImh0dHBzOi8vam91cm5hbC50b3AtYWNhZGVteS5ydS9cIn0ifSx7InBsdWdpbiI6Inhocl9jb250ZW50IiwicGFyYW1ldGVycyI6IntcInJlZmVycmVyXCI6XCJodHRwczovL2pvdXJuYWwudG9wLWFjYWRlbXkucnUvXCJ9In1dfSwiaXNUb3BMZXZlbCI6ZmFsc2UsInBhZ2VTdGFydFRpbWUiOjB9&nocache=1f8d4&tm=2024-02-13T10%3A31%3A08.628Z", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "ru,en;q=0.9,ru-RU;q=0.8,en-US;q=0.7",
+    "cache-control": "no-cache",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site"
+  },
+  "referrer": "https://mc.yandex.ru/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "omit"
+});
+
+OPTIONS
+- запрос информации о поддерживаемых методах у ресурса
+await fetch("https://cs.avito.ru/clickstream/events/1/json", {
+    "credentials": "omit",
+    "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0",
+        "Accept": "*/*",
+        "Accept-Language": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-site"
+    },
+    "referrer": "https://www.avito.ru/",
+    "method": "OPTIONS",
+    "mode": "cors"
+});
+
+HEAD
+- запрос заголовков ресурса (аналогичен методу GET, но без получения тела ответа).
+fetch("https://atl-global.atlassian.com/js/2.211.0/atl-global-2.211.0.min.js", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "ru,en;q=0.9,ru-RU;q=0.8,en-US;q=0.7",
+    "cache-control": "no-cache",
+    "content-type": "text/plain",
+    "pragma": "no-cache",
+    "sec-ch-ua": "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://support.atlassian.com/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "HEAD",
+  "mode": "cors",
+  "credentials": "omit"
+});
+
+PATCH
+- запрос на обновление ресурса (частично обновляет ресурс).
+await fetch("https://www.avito.ru/js/notifications/count?platform=desktop", {
+    "credentials": "include",
+    "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0",
+        "Accept": "application/json",
+        "Accept-Language": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "no-cors",
+        "Sec-Fetch-Site": "same-origin",
+        "X-KL-kfa-Ajax-Request": "Ajax_Request",
+        "Pragma": "no-cache",
+        "Cache-Control": "no-cache"
+    },
+    "referrer": "https://www.avito.ru/",
+    "method": "PATCH",
+    "mode": "cors"
+});
+
+await fetch("https://www.avito.ru/js/notifications/count?platform=desktop", {
+    "credentials": "include",
+    "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0",
+        "Accept": "application/json",
+        "Accept-Language": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "no-cors",
+        "Sec-Fetch-Site": "same-origin",
+        "X-KL-kfa-Ajax-Request": "Ajax_Request",
+        "Pragma": "no-cache",
+        "Cache-Control": "no-cache"
+    },
+    "referrer": "https://www.avito.ru/",
+    "method": "TRACE",
+    "mode": "cors"
+});
+
+await fetch("https://top-fwz1.mail.ru/js/code.js", {
+    "credentials": "omit",
+    "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0",
+        "Accept": "*/*",
+        "Accept-Language": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3",
+        "Sec-Fetch-Dest": "script",
+        "Sec-Fetch-Mode": "no-cors",
+        "Sec-Fetch-Site": "cross-site"
+    },
+    "referrer": "https://www.avito.ru/",
+    "method": "GET",
+    "mode": "cors"
+});
+
