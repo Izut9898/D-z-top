@@ -1,5 +1,4 @@
-PUT
-- запрос на обновление ресурса 
+PUT -метод
  fetch("https://eavicum2.atlassian.net/rest/api/latest/project/WEB/tracking/recent", {
   "headers": {
     "accept": "application/json,text/javascript,*/*",
