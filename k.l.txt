@@ -1,7 +1,7 @@
 Перечисленные ниже запросы найти на любых web ресурсах, скопировать функцией Copy as fetch, вставить в текстовый файл.
 Прислать этот файл в ответе на задание.
 
-GET- запрос информации о ресурсе.
+GET-метод
 fetch("https://www.dns-shop.ru/", {
   "headers": {
     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
